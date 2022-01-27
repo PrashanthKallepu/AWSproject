@@ -1,0 +1,21 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+		"Resources": {
+		"TicketingDataStream": {
+            "Type": "AWS::Kinesis::Stream",
+            "Properties": {
+                "Name": "TicketingDataStream",
+                "RetentionPeriodHours": 24,
+                "ShardCount": 2
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "5fee3187-b2d8-43d5-93d8-8ab932416e15"
+                }
+            }
+        }
+}
+		}
+		
